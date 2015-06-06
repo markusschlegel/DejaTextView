@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'DejaTextView_Example', :exclusive => true do
+  pod "DejaTextView", :path => "../"
+end
+
+target 'DejaTextView_Tests', :exclusive => true do
+  pod "DejaTextView", :path => "../"
+
+  
+end
