@@ -12,6 +12,8 @@ Add the following line to your `Podfile`:
 pod 'DejaTextView', :git => 'https://github.com/markusschlegel/DejaTextView.git'
 ```
 
+You might also just fish out the source file at `Pod/Classes/DejaTextView.swift`.
+
 ## Usage
 
 DejaTextView is mostly a drop-in replacement for UITextView, so just use it everywhere you like as if it was a standard UITextView. There’s one exception though. If you want to add your own gesture recognizers, you have to use the method addGestureRecognizerForReal(gestureRecognizer: UIGestureRecognizer). This is unfortunate, but maybe I find a way to handle this better in the future.
