@@ -1,0 +1,14 @@
+PODS:
+  - DejaTextView (0.1.0)
+
+DEPENDENCIES:
+  - DejaTextView (from `../`)
+
+EXTERNAL SOURCES:
+  DejaTextView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DejaTextView: 777267c7fb9aedbbe54cccafd9f7ea0a3785f84a
+
+COCOAPODS: 0.37.0
