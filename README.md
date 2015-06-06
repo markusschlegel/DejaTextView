@@ -13,7 +13,7 @@ DejaTextView is a UITextView subclass with improved text selection and cursor mo
 Add the following line to your `Podfile`:
 
 ```ruby
-pod "DejaTextView"
+pod 'DejaTextView', :git => 'https://github.com/markusschlegel/DejaTextView.git'
 ```
 
 ## Usage
