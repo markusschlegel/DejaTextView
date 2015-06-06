@@ -12,10 +12,7 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "DejaTextView is a UITextView subclass with improved text selection and cursor movement tools."
   s.description      = <<-DESC
-                       An optional longer description of DejaTextView
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Something meaningful that is longer than the summy which is really long and that is annoying but now I’m done.
                        DESC
   s.homepage         = "https://github.com/markusschlegel/DejaTextView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
