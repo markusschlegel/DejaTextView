@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DejaTextView"
-  s.version          = "0.1.0"
+  s.version          = "0.1.2"
   s.summary          = "DejaTextView is a UITextView subclass with improved text selection and cursor movement tools."
   s.description      = <<-DESC
                        Something meaningful that is longer than the summy which is really long and that is annoying but now I’m done.

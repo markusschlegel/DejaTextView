@@ -1,9 +1,5 @@
 # DejaTextView
 
-[![Version](https://img.shields.io/cocoapods/v/DejaTextView.svg?style=flat)](http://cocoapods.org/pods/DejaTextView)
-[![License](https://img.shields.io/cocoapods/l/DejaTextView.svg?style=flat)](http://cocoapods.org/pods/DejaTextView)
-[![Platform](https://img.shields.io/cocoapods/p/DejaTextView.svg?style=flat)](http://cocoapods.org/pods/DejaTextView)
-
 DejaTextView is a UITextView subclass with improved text selection and cursor movement tools. Written in Swift.
 
 ![DejaTextView demo loop](http://markusschlegel.github.io/DejaTextView.gif)
@@ -13,8 +9,10 @@ DejaTextView is a UITextView subclass with improved text selection and cursor mo
 Add the following line to your `Podfile`:
 
 ```ruby
-pod "DejaTextView"
+pod 'DejaTextView', :git => 'https://github.com/markusschlegel/DejaTextView.git'
 ```
+
+You might also just fish out the source file at `Pod/Classes/DejaTextView.swift`.
 
 ## Usage
 
