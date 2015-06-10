@@ -662,7 +662,7 @@ public class DejaTextView: UITextView
             self.selectedTextRangeDidChange()
             
             self._endGrabber.extended = false
-            self._endGrabber.transform(animated: true)
+            self._endGrabber.transform(animated: false)
         }
         
         NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardWillChangeFrameNotification, object: nil, queue: NSOperationQueue.mainQueue()) {
