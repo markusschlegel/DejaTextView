@@ -4,12 +4,12 @@ DejaTextView is a UITextView subclass with improved text selection and cursor mo
 
 ![DejaTextView demo loop](http://markusschlegel.github.io/DejaTextView.gif)
 
-## Insallation
+## Installation
 
 Add the following line to your `Podfile`:
 
 ```ruby
-pod 'DejaTextView', :git => 'https://github.com/markusschlegel/DejaTextView.git'
+pod 'DejaTextView'
 ```
 
 You might also just fish out the source file at `Pod/Classes/DejaTextView.swift`.
