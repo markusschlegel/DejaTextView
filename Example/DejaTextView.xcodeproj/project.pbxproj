@@ -47,6 +47,8 @@
 		8C755CDF711DDF4C84B9D87C /* DejaTextView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DejaTextView.podspec; path = ../DejaTextView.podspec; sourceTree = "<group>"; };
 		9F06A3761B28B51500EF5F86 /* DejaTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DejaTextView.framework; path = "Pods/../build/Debug-iphoneos/Pods-DejaTextView_Example/DejaTextView.framework"; sourceTree = "<group>"; };
 		9F06A3781B28B58400EF5F86 /* DejaTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DejaTextView.framework; path = "Pods/../build/Debug-iphoneos/Pods-DejaTextView_Tests/DejaTextView.framework"; sourceTree = "<group>"; };
+		9F7AE4401B28BA46007BC5F9 /* DejaTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DejaTextView.framework; path = "Pods/../build/Debug-iphoneos/Pods-DejaTextView_Example/DejaTextView.framework"; sourceTree = "<group>"; };
+		9F7AE4421B28BA7A007BC5F9 /* DejaTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DejaTextView.framework; path = "Pods/../build/Debug-iphoneos/Pods-DejaTextView_Tests/DejaTextView.framework"; sourceTree = "<group>"; };
 		F72A7C62AF534B1CD22CDB73 /* Pods-DejaTextView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DejaTextView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DejaTextView_Tests/Pods-DejaTextView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,8 @@
 		165DFE17DF5F69B0EF787322 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F7AE4421B28BA7A007BC5F9 /* DejaTextView.framework */,
+				9F7AE4401B28BA46007BC5F9 /* DejaTextView.framework */,
 				9F06A3781B28B58400EF5F86 /* DejaTextView.framework */,
 				9F06A3761B28B51500EF5F86 /* DejaTextView.framework */,
 				5094BF5B4576BC25ADB6A1DE /* Pods_DejaTextView_Example.framework */,
