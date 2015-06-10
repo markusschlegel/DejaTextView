@@ -613,7 +613,7 @@ public class DejaTextView: UITextView
     
     // MARK: - Initialization
     
-    init(frame: CGRect) {
+    public init(frame: CGRect) {
         super.init(frame: frame, textContainer: nil)
         self.configure()
     }
