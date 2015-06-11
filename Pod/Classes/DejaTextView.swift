@@ -22,8 +22,8 @@ let caret_tap_radius: CGFloat = 20.0
 let repositioning_timer_duration: Double = 1.0
 let start_grabber_y_offset: CGFloat = 20.0              // while dragging, the start grabber will be vertically positioned at this offset (0 is top edge)
 let end_grabber_y_offset: CGFloat = 23.0                // while dragging, the end grabber will be vertically positioned at this offset (0 is top edge)
-let start_grabber_tip_selection_offset: CGFloat = 20.0  // while dragging, the selection start will be set to the tip position + this offset
-let end_grabber_tip_selection_offset: CGFloat = 20.0    // while dragging, the selection end will be set to the tip position - this offset
+let start_grabber_tip_selection_offset: CGFloat = 10.0  // while dragging, the selection start will be set to the tip position + this offset
+let end_grabber_tip_selection_offset: CGFloat = 10.0    // while dragging, the selection end will be set to the tip position - this offset
 
 
 
