@@ -109,11 +109,10 @@ public class DejaTextView: UITextView
         
         
         
-        func transform(#animated: Bool) {
+        func transform(animated animated: Bool) {
             var newOrigin = self.tipPosition
             
             if let superView = self.superview {
-                let window: UIWindow? = UIApplication.sharedApplication().keyWindow
                 let xtreshold = self.frame.size.width / 2.0
                 var newPaths: (CGPath, CGPathRef?, CGPathRef?, CGPathRef?)
                 let alignment: DejaTextGrabberTipAlignment
@@ -150,7 +149,7 @@ public class DejaTextView: UITextView
                 _body.removeAllAnimations()
                 let morphAnimation = CABasicAnimation(keyPath: "path")
                 morphAnimation.duration = animation_duration
-                morphAnimation.fromValue = _body.presentationLayer().path
+                morphAnimation.fromValue = _body.presentationLayer()!.path
                 morphAnimation.toValue = newPaths.0
                 
                 _body.path = newPaths.0
@@ -162,7 +161,7 @@ public class DejaTextView: UITextView
                 // Fade animation
                 let fadeAnimation = CABasicAnimation(keyPath: "opacity")
                 fadeAnimation.duration = animation_duration
-                fadeAnimation.fromValue = _leftTriangle.presentationLayer().opacity
+                fadeAnimation.fromValue = _leftTriangle.presentationLayer()!.opacity
                 if let left = newPaths.1, right = newPaths.2, separator = newPaths.3 {
                     fadeAnimation.toValue = 1.0
                     
@@ -208,7 +207,7 @@ public class DejaTextView: UITextView
                 }
                 
                 if animated {
-                    UIView.animateWithDuration(animation_duration, delay: 0.0, usingSpringWithDamping: animation_spring_damping, initialSpringVelocity: 0.0, options: nil, animations: a, completion: nil)
+                    UIView.animateWithDuration(animation_duration, delay: 0.0, usingSpringWithDamping: animation_spring_damping, initialSpringVelocity: 0.0, options: [], animations: a, completion: nil)
                 } else {
                     a()
                 }
@@ -267,7 +266,7 @@ public class DejaTextView: UITextView
         
         
         
-        func paths(#tipDirection: DejaTextGrabberTipDirection, tipAlignment: DejaTextGrabberTipAlignment, extended: Bool) -> (CGPath, CGPath?, CGPath?, CGPath?) {
+        func paths(tipDirection tipDirection: DejaTextGrabberTipDirection, tipAlignment: DejaTextGrabberTipAlignment, extended: Bool) -> (CGPath, CGPath?, CGPath?, CGPath?) {
             if extended {
                 return self.extendedPaths(tipDirection: tipDirection, tipAlignment: tipAlignment)
             } else {
@@ -277,7 +276,7 @@ public class DejaTextView: UITextView
         
         
         
-        func extendedPaths(#tipDirection: DejaTextGrabberTipDirection, tipAlignment: DejaTextGrabberTipAlignment) -> (CGPath, CGPath?, CGPath?, CGPath?) {
+        func extendedPaths(tipDirection tipDirection: DejaTextGrabberTipDirection, tipAlignment: DejaTextGrabberTipAlignment) -> (CGPath, CGPath?, CGPath?, CGPath?) {
             let l, r, c : LineyPath
             
             if tipDirection == .Up {
@@ -341,7 +340,7 @@ public class DejaTextView: UITextView
         
         
         
-        func unextendedPaths(#tipDirection: DejaTextGrabberTipDirection, tipAlignment: DejaTextGrabberTipAlignment) -> (CGPath, CGPath?, CGPath?, CGPath?) {
+        func unextendedPaths(tipDirection tipDirection: DejaTextGrabberTipDirection, tipAlignment: DejaTextGrabberTipAlignment) -> (CGPath, CGPath?, CGPath?, CGPath?) {
             if tipDirection == .Up && tipAlignment == .Left {
                 return (self.unextendedTipUpLeftPaths(), nil, nil, nil)
             } else if tipDirection == .Up && tipAlignment == .Right {
@@ -762,7 +761,7 @@ public class DejaTextView: UITextView
     /**
         Use this method to add your own gesture recognizers.
     
-        :param: gestureRecognizer An object whose class descends from the UIGestureRecognizer class.
+        - parameter gestureRecognizer: An object whose class descends from the UIGestureRecognizer class.
     */
     internal func addGestureRecognizerForReal(gestureRecognizer: UIGestureRecognizer) {
         super.addGestureRecognizer(gestureRecognizer)
@@ -782,12 +781,12 @@ public class DejaTextView: UITextView
         }
         
         let location = recognizer.locationInView(self)
-        let closest = self.closestPositionToPoint(location)
+        let closest = self.closestPositionToPoint(location)!
         
         
         // Check whether the tap happened in the vicinity of the caret
         if self.selectedRange.length == 0 {
-            let caretRect = self.caretRectForPosition(self.selectedTextRange?.start)
+            let caretRect = self.caretRectForPosition(self.selectedTextRange!.start)
             let d = distanceFrom(point: location, toRect: caretRect)
             
             if d <= caret_tap_radius {
@@ -803,12 +802,12 @@ public class DejaTextView: UITextView
         
         // Tap inside or outside of words
         if self.tokenizer.isPosition(self.closestPositionToPoint(location)!, withinTextUnit: UITextGranularity.Word, inDirection: UITextLayoutDirection.Right.rawValue) && self.tokenizer.isPosition(self.closestPositionToPoint(location)!, withinTextUnit: UITextGranularity.Word, inDirection: UITextLayoutDirection.Left.rawValue) {
-            var rightLeft = self.tokenizer.positionFromPosition(closest, toBoundary: UITextGranularity.Word, inDirection: UITextLayoutDirection.Right.rawValue)
-            rightLeft = self.tokenizer.positionFromPosition(rightLeft!, toBoundary: UITextGranularity.Word, inDirection: UITextLayoutDirection.Left.rawValue)
+            var rightLeft = self.tokenizer.positionFromPosition(closest, toBoundary: UITextGranularity.Word, inDirection: UITextLayoutDirection.Right.rawValue)!
+            rightLeft = self.tokenizer.positionFromPosition(rightLeft, toBoundary: UITextGranularity.Word, inDirection: UITextLayoutDirection.Left.rawValue)!
             let rightLeftRect = self.caretRectForPosition(rightLeft)
             
-            var leftRight = self.tokenizer.positionFromPosition(closest, toBoundary: UITextGranularity.Word, inDirection: UITextLayoutDirection.Left.rawValue)
-            leftRight = self.tokenizer.positionFromPosition(leftRight!, toBoundary: UITextGranularity.Word, inDirection: UITextLayoutDirection.Right.rawValue)
+            var leftRight = self.tokenizer.positionFromPosition(closest, toBoundary: UITextGranularity.Word, inDirection: UITextLayoutDirection.Left.rawValue)!
+            leftRight = self.tokenizer.positionFromPosition(leftRight, toBoundary: UITextGranularity.Word, inDirection: UITextLayoutDirection.Right.rawValue)!
             let leftRightRect = self.caretRectForPosition(leftRight)
             
             if distanceFrom(point: location, toRect: rightLeftRect) < distanceFrom(point: location, toRect: leftRightRect) {
@@ -834,7 +833,7 @@ public class DejaTextView: UITextView
         }
         
         let location = recognizer.locationInView(self)
-        let closest = self.closestPositionToPoint(location)
+        let closest = self.closestPositionToPoint(location)!
         
         var range = self.tokenizer.rangeEnclosingPosition(closest, withGranularity: UITextGranularity.Word, inDirection: UITextLayoutDirection.Right.rawValue)
         
@@ -859,13 +858,13 @@ public class DejaTextView: UITextView
                 leftLeft = self.tokenizer.positionFromPosition(left!, toBoundary: UITextGranularity.Word, inDirection: UITextLayoutDirection.Left.rawValue)
             }
             
-            let rightRect = self.caretRectForPosition(right)
-            let leftRect = self.caretRectForPosition(left)
+            let rightRect = self.caretRectForPosition(right!)
+            let leftRect = self.caretRectForPosition(left!)
             
             if distanceFrom(point: location, toRect: rightRect) < distanceFrom(point: location, toRect: leftRect) {
-                self.selectedTextRange = self.textRangeFromPosition(right, toPosition: rightRight)
+                self.selectedTextRange = self.textRangeFromPosition(right!, toPosition: rightRight!)
             } else {
-                self.selectedTextRange = self.textRangeFromPosition(left, toPosition: leftLeft)
+                self.selectedTextRange = self.textRangeFromPosition(left!, toPosition: leftLeft!)
             }
         }
         
@@ -932,7 +931,7 @@ public class DejaTextView: UITextView
             }
         }
         
-        self.selectedTextRange = self.textRangeFromPosition(self.positionFromPosition(self.beginningOfDocument, offset: pos), toPosition: self.positionFromPosition(self.beginningOfDocument, offset: pos + len))
+        self.selectedTextRange = self.textRangeFromPosition(self.positionFromPosition(self.beginningOfDocument, offset: pos)!, toPosition: self.positionFromPosition(self.beginningOfDocument, offset: pos + len)!)
         
         
         // Show editing menu
@@ -976,17 +975,17 @@ public class DejaTextView: UITextView
             }
         } else {
             if len > 0 {
-                if count(self.text) != pos + len {
+                if self.text.characters.count != pos + len {
                     len++
                 }
             } else {
-                if count(self.text) != pos + len {
+                if self.text.characters.count != pos + len {
                     pos++
                 }
             }
         }
         
-        self.selectedTextRange = self.textRangeFromPosition(self.positionFromPosition(self.beginningOfDocument, offset: pos), toPosition: self.positionFromPosition(self.beginningOfDocument, offset: pos + len))
+        self.selectedTextRange = self.textRangeFromPosition(self.positionFromPosition(self.beginningOfDocument, offset: pos)!, toPosition: self.positionFromPosition(self.beginningOfDocument, offset: pos + len)!)
         
         
         // Show editing menu
@@ -1054,7 +1053,7 @@ public class DejaTextView: UITextView
         let pos = CGPointMake(tip.x, tip.y + start_grabber_tip_selection_offset)
         
         
-        let textPosition = self.closestPositionToPoint(pos)
+        let textPosition = self.closestPositionToPoint(pos)!
         let posOffset = self.offsetFromPosition(self.beginningOfDocument, toPosition: textPosition)
         let endOffset = self.offsetFromPosition(self.beginningOfDocument, toPosition: self.selectedTextRange!.end)
         
@@ -1110,7 +1109,7 @@ public class DejaTextView: UITextView
         
         let pos = CGPointMake(tip.x, tip.y - end_grabber_tip_selection_offset)
         
-        let textPosition = self.closestPositionToPoint(pos)
+        let textPosition = self.closestPositionToPoint(pos)!
         let posOffset = self.offsetFromPosition(self.beginningOfDocument, toPosition: textPosition)
         let startOffset = self.offsetFromPosition(self.beginningOfDocument, toPosition: self.selectedTextRange!.start)
         
@@ -1120,7 +1119,7 @@ public class DejaTextView: UITextView
             if self.selectedRange.length == 0 {
                 self.selectedTextRange = self.textRangeFromPosition(textPosition, toPosition: textPosition)
             } else {
-                self.selectedTextRange = self.textRangeFromPosition(self.selectedTextRange?.start, toPosition: textPosition)
+                self.selectedTextRange = self.textRangeFromPosition(self.selectedTextRange!.start, toPosition: textPosition)
             }
         }
         
@@ -1171,8 +1170,14 @@ public class DejaTextView: UITextView
     
     // MARK: - UITextInput protocol
     
+    class DejaTextSelectionRect: UITextSelectionRect {
+        override var rect: CGRect {
+            return CGRect(x: -100, y: -100, width: 4, height: 4)
+        }
+    }
+    
     override public func selectionRectsForRange(range: UITextRange) -> [AnyObject] {
-        return []
+        return [DejaTextSelectionRect()]
     }
     
     
@@ -1220,7 +1225,7 @@ public class DejaTextView: UITextView
     
     
     
-    private func distanceFrom(#point: CGPoint, toRect rect: CGRect) -> CGFloat {
+    private func distanceFrom(point point: CGPoint, toRect rect: CGRect) -> CGFloat {
         let center = CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect))
         let x2 = pow(fabs(center.x - point.x), 2)
         let y2 = pow(fabs(center.y - point.y), 2)
