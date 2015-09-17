@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DejaTextView"
-  s.version          = "0.1.4"
+  s.version          = "0.1.5"
   s.summary          = "DejaTextView is a UITextView subclass with improved text selection and cursor movement tools."
   s.description      = <<-DESC
                        Something meaningful that is longer than the summy which is really long and that is annoying but now I’m done.
@@ -23,12 +23,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'DejaTextView' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'DejaTextView.swift'
 end

@@ -1,6 +1,0 @@
-framework module DejaTextView {
-  umbrella header "Pods-DejaTextView_Example-DejaTextView-umbrella.h"
-
-  export *
-  module * { export * }
-}
