@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F18DEA71BAADF31005BEF80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F18DEA61BAADF31005BEF80 /* AppDelegate.swift */; };
+		9F18DEA91BAADF31005BEF80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F18DEA81BAADF31005BEF80 /* ViewController.swift */; };
+		9F18DEAC1BAADF31005BEF80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F18DEAA1BAADF31005BEF80 /* Main.storyboard */; };
+		9F18DEAE1BAADF31005BEF80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F18DEAD1BAADF31005BEF80 /* Assets.xcassets */; };
+		9F18DEB11BAADF31005BEF80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F18DEAF1BAADF31005BEF80 /* LaunchScreen.storyboard */; };
+		9F18DEBC1BAADF31005BEF80 /* DejaTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F18DEBB1BAADF31005BEF80 /* DejaTextViewTests.swift */; };
+		9F18DEC71BAADF31005BEF80 /* DejaTextViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F18DEC61BAADF31005BEF80 /* DejaTextViewUITests.swift */; };
+		9FF918F11BAAE0BC003E044F /* DejaTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF918F01BAAE0BC003E044F /* DejaTextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F18DEB81BAADF31005BEF80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F18DE9B1BAADF31005BEF80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F18DEA21BAADF31005BEF80;
+			remoteInfo = DejaTextView;
+		};
+		9F18DEC31BAADF31005BEF80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F18DE9B1BAADF31005BEF80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F18DEA21BAADF31005BEF80;
+			remoteInfo = DejaTextView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F18DEA31BAADF31005BEF80 /* DejaTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DejaTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F18DEA61BAADF31005BEF80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F18DEA81BAADF31005BEF80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F18DEAB1BAADF31005BEF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F18DEAD1BAADF31005BEF80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F18DEB01BAADF31005BEF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F18DEB21BAADF31005BEF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F18DEB71BAADF31005BEF80 /* DejaTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DejaTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F18DEBB1BAADF31005BEF80 /* DejaTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejaTextViewTests.swift; sourceTree = "<group>"; };
+		9F18DEBD1BAADF31005BEF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F18DEC21BAADF31005BEF80 /* DejaTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DejaTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F18DEC61BAADF31005BEF80 /* DejaTextViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejaTextViewUITests.swift; sourceTree = "<group>"; };
+		9F18DEC81BAADF31005BEF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FF918F01BAAE0BC003E044F /* DejaTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DejaTextView.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F18DEA01BAADF31005BEF80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F18DEB41BAADF31005BEF80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F18DEBF1BAADF31005BEF80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F18DE9A1BAADF31005BEF80 = {
+			isa = PBXGroup;
+			children = (
+				9F18DEA51BAADF31005BEF80 /* DejaTextView */,
+				9F18DEBA1BAADF31005BEF80 /* DejaTextViewTests */,
+				9F18DEC51BAADF31005BEF80 /* DejaTextViewUITests */,
+				9F18DEA41BAADF31005BEF80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F18DEA41BAADF31005BEF80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F18DEA31BAADF31005BEF80 /* DejaTextView.app */,
+				9F18DEB71BAADF31005BEF80 /* DejaTextViewTests.xctest */,
+				9F18DEC21BAADF31005BEF80 /* DejaTextViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F18DEA51BAADF31005BEF80 /* DejaTextView */ = {
+			isa = PBXGroup;
+			children = (
+				9F18DEA61BAADF31005BEF80 /* AppDelegate.swift */,
+				9F18DEA81BAADF31005BEF80 /* ViewController.swift */,
+				9F18DEAA1BAADF31005BEF80 /* Main.storyboard */,
+				9FF918F01BAAE0BC003E044F /* DejaTextView.swift */,
+				9F18DEAD1BAADF31005BEF80 /* Assets.xcassets */,
+				9F18DEAF1BAADF31005BEF80 /* LaunchScreen.storyboard */,
+				9F18DEB21BAADF31005BEF80 /* Info.plist */,
+			);
+			path = DejaTextView;
+			sourceTree = "<group>";
+		};
+		9F18DEBA1BAADF31005BEF80 /* DejaTextViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F18DEBB1BAADF31005BEF80 /* DejaTextViewTests.swift */,
+				9F18DEBD1BAADF31005BEF80 /* Info.plist */,
+			);
+			path = DejaTextViewTests;
+			sourceTree = "<group>";
+		};
+		9F18DEC51BAADF31005BEF80 /* DejaTextViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F18DEC61BAADF31005BEF80 /* DejaTextViewUITests.swift */,
+				9F18DEC81BAADF31005BEF80 /* Info.plist */,
+			);
+			path = DejaTextViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F18DEA21BAADF31005BEF80 /* DejaTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F18DECB1BAADF31005BEF80 /* Build configuration list for PBXNativeTarget "DejaTextView" */;
+			buildPhases = (
+				9F18DE9F1BAADF31005BEF80 /* Sources */,
+				9F18DEA01BAADF31005BEF80 /* Frameworks */,
+				9F18DEA11BAADF31005BEF80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DejaTextView;
+			productName = DejaTextView;
+			productReference = 9F18DEA31BAADF31005BEF80 /* DejaTextView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F18DEB61BAADF31005BEF80 /* DejaTextViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F18DECE1BAADF31005BEF80 /* Build configuration list for PBXNativeTarget "DejaTextViewTests" */;
+			buildPhases = (
+				9F18DEB31BAADF31005BEF80 /* Sources */,
+				9F18DEB41BAADF31005BEF80 /* Frameworks */,
+				9F18DEB51BAADF31005BEF80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F18DEB91BAADF31005BEF80 /* PBXTargetDependency */,
+			);
+			name = DejaTextViewTests;
+			productName = DejaTextViewTests;
+			productReference = 9F18DEB71BAADF31005BEF80 /* DejaTextViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F18DEC11BAADF31005BEF80 /* DejaTextViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F18DED11BAADF31005BEF80 /* Build configuration list for PBXNativeTarget "DejaTextViewUITests" */;
+			buildPhases = (
+				9F18DEBE1BAADF31005BEF80 /* Sources */,
+				9F18DEBF1BAADF31005BEF80 /* Frameworks */,
+				9F18DEC01BAADF31005BEF80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F18DEC41BAADF31005BEF80 /* PBXTargetDependency */,
+			);
+			name = DejaTextViewUITests;
+			productName = DejaTextViewUITests;
+			productReference = 9F18DEC21BAADF31005BEF80 /* DejaTextViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F18DE9B1BAADF31005BEF80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Markus Schlegel";
+				TargetAttributes = {
+					9F18DEA21BAADF31005BEF80 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					9F18DEB61BAADF31005BEF80 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9F18DEA21BAADF31005BEF80;
+					};
+					9F18DEC11BAADF31005BEF80 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9F18DEA21BAADF31005BEF80;
+					};
+				};
+			};
+			buildConfigurationList = 9F18DE9E1BAADF31005BEF80 /* Build configuration list for PBXProject "DejaTextView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F18DE9A1BAADF31005BEF80;
+			productRefGroup = 9F18DEA41BAADF31005BEF80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F18DEA21BAADF31005BEF80 /* DejaTextView */,
+				9F18DEB61BAADF31005BEF80 /* DejaTextViewTests */,
+				9F18DEC11BAADF31005BEF80 /* DejaTextViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F18DEA11BAADF31005BEF80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F18DEB11BAADF31005BEF80 /* LaunchScreen.storyboard in Resources */,
+				9F18DEAE1BAADF31005BEF80 /* Assets.xcassets in Resources */,
+				9F18DEAC1BAADF31005BEF80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F18DEB51BAADF31005BEF80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F18DEC01BAADF31005BEF80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F18DE9F1BAADF31005BEF80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF918F11BAAE0BC003E044F /* DejaTextView.swift in Sources */,
+				9F18DEA91BAADF31005BEF80 /* ViewController.swift in Sources */,
+				9F18DEA71BAADF31005BEF80 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F18DEB31BAADF31005BEF80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F18DEBC1BAADF31005BEF80 /* DejaTextViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F18DEBE1BAADF31005BEF80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F18DEC71BAADF31005BEF80 /* DejaTextViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F18DEB91BAADF31005BEF80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F18DEA21BAADF31005BEF80 /* DejaTextView */;
+			targetProxy = 9F18DEB81BAADF31005BEF80 /* PBXContainerItemProxy */;
+		};
+		9F18DEC41BAADF31005BEF80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F18DEA21BAADF31005BEF80 /* DejaTextView */;
+			targetProxy = 9F18DEC31BAADF31005BEF80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F18DEAA1BAADF31005BEF80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F18DEAB1BAADF31005BEF80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F18DEAF1BAADF31005BEF80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F18DEB01BAADF31005BEF80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F18DEC91BAADF31005BEF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F18DECA1BAADF31005BEF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F18DECC1BAADF31005BEF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DejaTextView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markus-schlegel.DejaTextView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F18DECD1BAADF31005BEF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DejaTextView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markus-schlegel.DejaTextView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9F18DECF1BAADF31005BEF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DejaTextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markus-schlegel.DejaTextViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DejaTextView.app/DejaTextView";
+			};
+			name = Debug;
+		};
+		9F18DED01BAADF31005BEF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DejaTextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markus-schlegel.DejaTextViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DejaTextView.app/DejaTextView";
+			};
+			name = Release;
+		};
+		9F18DED21BAADF31005BEF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DejaTextViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markus-schlegel.DejaTextViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DejaTextView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9F18DED31BAADF31005BEF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DejaTextViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.markus-schlegel.DejaTextViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DejaTextView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F18DE9E1BAADF31005BEF80 /* Build configuration list for PBXProject "DejaTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F18DEC91BAADF31005BEF80 /* Debug */,
+				9F18DECA1BAADF31005BEF80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F18DECB1BAADF31005BEF80 /* Build configuration list for PBXNativeTarget "DejaTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F18DECC1BAADF31005BEF80 /* Debug */,
+				9F18DECD1BAADF31005BEF80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F18DECE1BAADF31005BEF80 /* Build configuration list for PBXNativeTarget "DejaTextViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F18DECF1BAADF31005BEF80 /* Debug */,
+				9F18DED01BAADF31005BEF80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F18DED11BAADF31005BEF80 /* Build configuration list for PBXNativeTarget "DejaTextViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F18DED21BAADF31005BEF80 /* Debug */,
+				9F18DED31BAADF31005BEF80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F18DE9B1BAADF31005BEF80 /* Project object */;
+}
